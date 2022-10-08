@@ -28,7 +28,7 @@ TrayTip 6b6t Item Frame Duper, Press Ctrl+Z to start/stop the autoclicker!
 			If (!Toggle)
 				break
 			Click, Right
-			Sleep 1900
+			Sleep 900
 			If (!Toggle)
 				break
 			Click, Right
