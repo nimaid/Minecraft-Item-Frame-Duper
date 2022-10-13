@@ -19,21 +19,16 @@ TrayTip 6b6t Item Frame Duper, Press Ctrl+Z to start/stop the autoclicker!
 	If (Toggle)
 	{
 		TrayTip Script Running..., Duping has started! Press Ctrl+Z to stop.
-		Click, Right
-		Sleep 2000
+		Send {rbutton down}
 		While, Toggle
 		{
-			Click
-			Sleep 1000
-			If (!Toggle)
-				break
-			Click, Right
-			Sleep 900
-			If (!Toggle)
-				break
-			Click, Right
-			Sleep 100
+			Sleep 2000
+			if (Toggle)
+			{
+				Click
+			}
 		}
+		Send {rbutton up}
 		TrayTip Script Done!, Duping has finished! Press Ctrl+Z to start again.
 	}
 }
