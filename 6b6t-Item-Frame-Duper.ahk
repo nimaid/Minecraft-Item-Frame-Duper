@@ -22,7 +22,7 @@ TrayTip 6b6t Item Frame Duper, Press Ctrl+Z to start/stop the autoclicker!
 		Send {rbutton down}
 		While, Toggle
 		{
-			Sleep 2000
+			Sleep 500
 			if (Toggle)
 			{
 				Click
