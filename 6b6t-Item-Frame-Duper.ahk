@@ -10,7 +10,7 @@ Menu, Tray, Icon, %I_Icon%
 
 #MaxThreadsPerHotkey 3
 
-TrayTip 6b6t Item Frame Duper, Press Ctrl+Z to start/stop the autoclicker!
+TrayTip 6b6t Item Frame Duper, Press Ctrl+Z to start/stop the autoclicker! (Add shift for fast dupe mode.)
 
 ^z::
 
@@ -54,18 +54,18 @@ return
 	
 	If (ToggleFast)
 	{
-		TrayTip Script Running..., Duping (fast) has started! Press Ctrl+Z to stop.
+		TrayTip Script Running..., Duping (fast) has started! Press Ctrl+Shift+Z to stop.
 		Send {rbutton down}
 		While, ToggleFast
 		{
-			Sleep 600
+			Sleep 650
 			if (ToggleFast)
 			{
 				Click
 			}
 		}
 		Send {rbutton up}
-		TrayTip Script Done!, Duping (fast) has finished! Press Ctrl+Z to start again.
+		TrayTip Script Done!, Duping (fast) has finished! Press Ctrl+Shift+Z to start again.
 	}
 return
 
