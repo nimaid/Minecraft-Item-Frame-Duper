@@ -58,7 +58,7 @@ return
 		Send {rbutton down}
 		While, ToggleFast
 		{
-			Sleep 650
+			Sleep 600
 			if (ToggleFast)
 			{
 				Click
