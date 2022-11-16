@@ -1,4 +1,4 @@
-# 6b6t-Item-Frame-Duper
+# Minecraft-Item-Frame-Duper
 An AutoHotKey script to automate the item frame dupe on Minecraft servers that allow it.
 
 
